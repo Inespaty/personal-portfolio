@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>     
+</head>
+<body>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <a href="#" class="logo">
+            <span class="blue">PORT</span><span class="red">folio.</span>
+        </a>
+
+        <nav class="navbar">
+            <a href="#home"  style="--i:1;"class="active">Home</a>
+            <a href="#about" style="--i:2;">About</a>
+            <a href="#skills" style="--i:3;">Skills</a>
+            <a href="#projects" style="--i:4;">Projects</a>
+            <a href="#contact" style="--i:6;">Contact</a>
+        </nav>
+    </header>
+    
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, I'm Ines Patiente MICOMYIZA</h1>
+            <h2>ASPIRING</h2>
+            <h3>  <span class="multiple-text"></span></h3>
+            <p> Aspiring Software Engineer passionate about turning ideas into innovative, human-centered solutions.</p>
+        </div>
+        <div class="home-sci">
+            <a href="mailto:minespatiente@gmail.com" target="_blank" style="--i:1;"><i class='bx bxl-gmail'></i></a>
+            <a href="https://github.com/Inespaty" target="_blank"  style="--i:2;"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/inespatiente/"target="_blank" style="--i:3;"><i class='bx bxl-linkedin'></i></a>
+        </div>
+        
+    </section>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js">
+
+    </script>
+
+      
+
+
+
+
+    <!-- About Section -->
+    <section class="about" id="about">
+
+        <div class="about-img">
+      <img src="photo-removebg-preview.png" alt="About Me">
+        </div>
+        <div class="about-content">
+            <h1>About Me</h1>
+            <p>I’m an aspiring Software Engineer with a strong passion for technology and problem-solving. With a detail-oriented mindset, I bring curiosity, creativity, and precision to everything I do whether it’s refining code, designing intuitive interfaces, or analyzing data to uncover patterns. </p>
+            <p>I’m a quick learner who adapts easily to new tools, environments, and technologies. My communication and listening skills make collaboration natural, while my persistence ensures I see tasks through with quality and consistency.</p>
+            <p>At the core, I believe technology should not only function effectively but also inspire trust and feel human-centered. My goal is to keep building on my foundation in software engineering and create solutions that are impactful and innovative  </p>
+        </div>
+
+    </section>
+
+    
+   <!-- Skills Section -->
+  <section class="skills" id="skills">
+    <h1>Skills</h1>
+
+   <!-- Category Buttons -->
+  <div class="skills-buttons">
+    <button class="active" onclick="showCategory('tech')">Tech Stack</button>
+    <button onclick="showCategory('tools')">Tools</button>
+  </div>
+
+  <!-- Tech Stack Skills -->
+  <div class="skills-container" id="tech">
+    
+  <div class="skill html">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5 logo">
+    <span>HTML</span>
+  </div>
+
+  <div class="skill css">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3 logo">
+    <span>CSS</span>
+  </div>
+
+  <div class="skill javascript">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript logo">
+    <span>JavaScript</span>
+  </div>
+
+  <div class="skill java">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java logo">
+    <span>Java</span>
+  </div>
+
+  <div class="skill php">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP logo">
+    <span>PHP</span>
+  </div>
+
+  <div class="skill cpp">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="C++ logo">
+    <span>C++</span>
+  </div>
+
+  <div class="skill python">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python logo">
+    <span>Python</span>
+  </div>
+
+  <div class="skill csharp">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="C# logo">
+    <span>C#</span>
+  </div>
+</div>
+
+  <!-- Tools Skills -->
+  <div class="skills-container" id="tools" style="display:none;">
+    <div class="skill notion">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-original.svg" alt="Notion logo">
+    <span>Notion</span>
+  </div>
+
+  <div class="skill postgresql">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" alt="PostgreSQL logo">
+    <span>PostgreSQL</span>
+  </div>
+
+  <div class="skill github">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub logo">
+    <span>GitHub</span>
+  </div>
+
+  <div class="skill mysql">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" alt="MySQL logo">
+    <span>MySQL</span>
+  </div>
+    
+  </div>
+
+  </section>
+
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <h2 class="section-title">Latest <span>Projects</span></h2>
+
+  <div class="projects-container">
+    <!-- Project 1 -->
+    <div class="project-card">
+      <img src="calculator.png" alt="Simple Calculator">
+      <div class="project-info">
+        <h3>Simple Calculator</h3>
+        <p>A responsive calculator app built with HTML, CSS, and JavaScript.</p>
+        <div class="project-links">
+          <a href="https://simple-calculator-ines.netlify.app/" target="_blank">Live Demo</a>
+          <a href="https://github.com/Inespaty" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <img src="ai-learning.png" alt="AI Learning System">
+      <div class="project-info">
+        <h3>AI-Powered Learning System</h3>
+        <p>A personalized learning platform powered by AI.</p>
+        <div class="project-links">
+          <a href="https://github.com/Inespaty/Thurs_26638_AI-POWERED-PERSONALIZED-LEARNING-SYSTEM" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add More Projects Here -->
+  </div>
+  </section>
+
+
+
+
+
+  
+
+
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2 class="section-title">Keep in <span>Touch</span></h2>
+    <p>Have a question or idea? Drop me a message below.</p>
+  <form id="contact-form">
+     <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="text" name="title" placeholder="Subject" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+    <p id="status-msg"></p>
+  </form>
+  </section>
+
+  <footer class="footer">
+  <p>&copy; 2025 Ines Patiente. All Rights Reserved.</p>
+  <div class="footer-socials">
+    <a href="mailto:minespatiente@gmail.com" target="_blank"><i class='bx bxl-gmail'></i></a>
+    <a href="https://github.com/Inespaty" target="_blank"><i class='bx bxl-github'></i></a>
+    <a href="https://www.linkedin.com/in/inespatiente/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+</div>
+</footer>
+
+
+    <!-- Footer or other sections can go here -->
+
+    <!-- Particles.js Script -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 40,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": { "value": "#007bff" },
+                "shape": {
+                    "type": "circle",
+                    "stroke": { "width": 0, "color": "#000000" }
+                },
+                "opacity": { "value": 0.5, "random": true },
+                "size": { "value": 3, "random": true },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#007bff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 2,
+                    "direction": "none",
+                    "random": true,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": { "enable": true, "mode": "grab" },
+                    "onclick": { "enable": true, "mode": "push" },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": { "distance": 140, "line_linked": { "opacity": 0.5 } },
+                    "push": { "particles_nb": 4 }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+
+    <script>
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".navbar a");
+
+  window.addEventListener("scroll", () => {
+    let currentSection = "";
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 120; // adjust for header
+      const sectionHeight = section.offsetHeight;
+
+      if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+        currentSection = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === "#" + currentSection) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
+
+
+<script>
+  // Initialize EmailJS
+  emailjs.init("ZsyRclyawqqAZh_3T"); // Replace with your EmailJS Public Key
+
+  // Form submission
+  document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault(); // Prevent page reload
+
+    emailjs.sendForm("service_bnyhngs", "template_g66sahj", this)
+      .then(() => {
+        document.getElementById("status-msg").textContent = "Message sent successfully!";
+        this.reset(); // Clear the form
+      }, (error) => {
+        document.getElementById("status-msg").textContent = "Failed to send message. Try again.";
+        console.error(error);
+      });
+  });
+
+</script>
+
+</body>
+</html>
+
+
+
+
