@@ -634,3 +634,53 @@ section h1 {
 .footer-socials a:hover {
   color: #4CAF50; /* match your button color */
 }
+
+
+
+/* ===== Mobile Adjustments ===== */
+@media (max-width: 768px) {
+    /* Navbar moves to the right */
+    .header {
+        flex-direction: row; /* keep logo + nav in a row */
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 5%;
+    }
+
+    .navbar {
+        flex-direction: column; /* stack links vertically */
+        position: fixed;
+        right: 0;
+        top: 80px; /* below header */
+        background: rgba(29, 28, 31, 0.95); /* optional semi-transparent bg */
+        padding: 15px;
+        border-radius: 10px 0 0 10px;
+        gap: 10px;
+        z-index: 99;
+    }
+
+    .navbar a {
+        margin-left: 0;
+        font-size: 16px;
+    }
+
+    /* Push content so navbar doesn't block */
+    .home-content {
+        margin-right: 160px; /* adjust to navbar width */
+    }
+
+    /* Social icons below paragraph */
+    .home-sci {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        margin: 20px 0 0 0;
+        justify-content: center;
+        flex-direction: row; /* horizontal stack */
+        order: 2; /* place after paragraph */
+    }
+
+    .home-content p {
+        order: 1; /* ensure paragraph comes before social icons */
+    }
+}
