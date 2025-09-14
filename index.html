@@ -35,7 +35,7 @@
             <h1>Hi, I'm Ines Patiente MICOMYIZA</h1>
             <h2>ASPIRING</h2>
             <h3>  <span class="multiple-text"></span></h3>
-            <p> Aspiring Software Engineer passionate about turning ideas into innovative, human-centered solutions.</p>
+            <p> A Software Engineer passionate about turning ideas into innovative, human-centered solutions.</p>
         </div>
         <div class="home-sci">
             <a href="mailto:minespatiente@gmail.com" target="_blank" style="--i:1;"><i class='bx bxl-gmail'></i></a>
@@ -49,7 +49,7 @@
 
     </script>
 
-      
+       <script src="script.js"></script>
 
 
 
@@ -181,6 +181,16 @@
       </div>
     </div>
 
+    <div class="project-card">
+  <img src="portfolio.png" alt="Portfolio Website">
+  <div class="project-info">
+    <h3>Personal Portfolio</h3>
+    <p>A responsive portfolio website showcasing my skills, projects, and contact form.</p>
+    <div class="project-links">
+      <a href="https://github.com/Inespaty/personal-portfolio" target="_blank">GitHub</a>
+    </div>
+  </div>
+</div>
     <!-- Add More Projects Here -->
   </div>
   </section>
@@ -225,7 +235,7 @@
         particlesJS("particles-js", {
             "particles": {
                 "number": {
-                    "value": 40,
+                    "value": 30,
                     "density": {
                         "enable": true,
                         "value_area": 800
@@ -298,24 +308,28 @@
 
 
 <script>
-  // Initialize EmailJS
-  emailjs.init("ZsyRclyawqqAZh_3T"); // Replace with your EmailJS Public Key
+  // Initialize EmailJS with your Public Key
+  (function() {
+    emailjs.init("ZsyRclyawqqAZh_3T"); // ✅ make sure this is your Public Key
+  })();
 
-  // Form submission
+  // Handle form submit
   document.getElementById("contact-form").addEventListener("submit", function(e) {
     e.preventDefault(); // Prevent page reload
 
-    emailjs.sendForm("service_bnyhngs", "template_g66sahj", this)
+    emailjs.sendForm("service_1w06dsh", "template_g66sahj", this)
       .then(() => {
-        document.getElementById("status-msg").textContent = "Message sent successfully!";
-        this.reset(); // Clear the form
+        document.getElementById("status-msg").textContent = " Message sent successfully!";
+        document.getElementById("status-msg").style.color = "green";
+        this.reset();
       }, (error) => {
-        document.getElementById("status-msg").textContent = "Failed to send message. Try again.";
-        console.error(error);
+        document.getElementById("status-msg").textContent = " Failed to send message. Try again.";
+        document.getElementById("status-msg").style.color = "red";
+        console.error("EmailJS Error:", error);
       });
   });
-
 </script>
+
 
 </body>
 </html>
