@@ -135,16 +135,7 @@ body {
 }
 
 
-.home-sci {
-    position: static;
-    bottom: -150px;
-    right: 810px;
-    width: 160px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: -130px;
-   
-}
+
 
 .home-sci {
   display: flex;
@@ -169,7 +160,7 @@ body {
 
 .home-sci a {
     position: relative;
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 42px;
@@ -177,7 +168,7 @@ body {
     background: transparent;
     border: 2px solid #7cf03d;
     border-radius: 50%;
-    font-size: 33px;
+    font-size: 30px;
     color: #7cf03d;
     text-decoration: none;
     margin: 20px 15px 30px 0;
@@ -186,6 +177,7 @@ body {
     animation-delay: calc(.2s * var(--i));
 
 }
+
 .home-sci a:hover {
     background: #7cf03d;
     color: #1f242d;
