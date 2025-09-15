@@ -157,6 +157,9 @@ body {
     align-items: flex-start; /* align to left instead of center */
     justify-content: flex-start;
   }
+  .home-content h1 {
+    text-align: left;
+  }
 }
 
 
