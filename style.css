@@ -146,7 +146,7 @@ body {
 
 @media (max-width: 768px) {
   .home-sci {
-    justify-content: left;
+    justify-content: flex-start;
     margin-top: 20px;
     order: 3; /* ensures it comes after text in flex layout */
   }
@@ -154,10 +154,11 @@ body {
   .home-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: left;
+    align-items: flex-start; /* align to left instead of center */
+    justify-content: flex-start;
   }
 }
+
 
 
 
