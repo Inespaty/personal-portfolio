@@ -134,6 +134,7 @@ body {
     animation-delay: .1s;
 }
 
+
 .home-sci {
     position: static;
     bottom: -150px;
@@ -145,10 +146,24 @@ body {
    
 }
 
+.home-sci {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  position: relative;
+}
+
 @media (max-width: 768px) {
   .home-sci {
-    justify-content: left;
-    margin-top: 30px;
+    justify-content: center;
+    margin-top: 20px;
+    order: 3; /* ensures it comes after text in flex layout */
+  }
+
+  .home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -692,4 +707,5 @@ section h1 {
     position: relative;
   }
 }
+
 
