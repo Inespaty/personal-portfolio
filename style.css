@@ -146,7 +146,7 @@ body {
 
 @media (max-width: 768px) {
   .home-sci {
-    justify-content: center;
+    justify-content: left;
     margin-top: 20px;
     order: 3; /* ensures it comes after text in flex layout */
   }
@@ -157,6 +157,8 @@ body {
     align-items: center;
   }
 }
+
+
 
 .home-sci a {
     position: relative;
